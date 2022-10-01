@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  webserver:
+    container_name: minhas_compras
+    ports:
+      - 80:80
+    build: 
+      context: .
+    volumes:
+      - ./app:/var/www
